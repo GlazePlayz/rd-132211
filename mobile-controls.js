@@ -20,10 +20,6 @@
 (function () {
   "use strict";
 
-  var isTouch = ("ontouchstart" in window) || navigator.maxTouchPoints > 0;
-  var force = /forceMobile=1/.test(location.search);
-  if (!isTouch && !force) return;
-
   /* ---------------------------------------------------------------
    * 0. Make sure the page doesn't zoom/scroll under touch
    * ------------------------------------------------------------- */
